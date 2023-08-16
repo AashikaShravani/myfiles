@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupil Form</title>
+    <style>
+        fieldset{
+            background-color: rgb(226, 197, 161);
+            border: 3px solid black;
+
+        }
+        legend{
+            background-color: rgb(9, 9, 9);
+            color:azure;
+            padding:5px 10px;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #a87953;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #080808;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #020202;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000000;
+        }
+    </style> 
+    <fieldset>
+        <legend>Share Your Details</legend>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Pupil Form</h2>
+        <form action="submit_form.php" method="POST">
+            
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name"required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>You're</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="TG">TransGender</option>
+                <!-- Add more options as needed -->
+            </select>
+        
+
+            <label for="mobile">Mobile Number:</label>
+            <input id="mobile" name="mobile" placeholder="Enter your MobileNumber"required>
+            </select>
+
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="" disabled selected>Here you go</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Banglore</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Trichy">Trichy</option>
+                <option value="Pondicherry">Pondicherry</option>
+            </select>    
+
+                
+
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <option value="" disabled selected>Here you go</option>
+                <option value="TamilNadu">TamilNadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="AndraPradesh">AndraPradesh</option>
+                <option value="Telengana">Telengana</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Patna">Patna</option>
+            </select>    
+                
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Here you go</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="Italy">Italy</option>
+                <option value="Germany">Germany</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</fieldset>    
+</body>
+</html>
